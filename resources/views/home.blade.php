@@ -2,5 +2,5 @@
 
 @section('contents')
 
-<h1>halo selamat datang</h1>
+<h1>halo selamat datang, nama saya Haikal</h1>
 @endsection

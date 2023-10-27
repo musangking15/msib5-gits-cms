@@ -16,12 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return redirect('login');
 });
 
 Route::get('/author', function () {
     return view('home');
 })->name('author');
+
+Route::get('/category/add', function () {
+    return view('category.add');
+});
 
 Route::resource('category', CategoriesController::class);
 
